@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Bakery</title>
+    <link rel="shortcut icon" type="image" href="data:image/jpeg;base64,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">
+    <link rel="stylesheet" href="cake.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+   
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="all-content">
+       
+        <nav class="navbar navbar-expand-md" id="navbar">
+           
+            <a class="navbar-brand" href="#" id="logo"><img src="https://media.istockphoto.com/id/1187830875/photo/confectioner-decorating-chocolate-cake-close-up.jpg?s=612x612&w=0&k=20&c=sAUop7R4pohc-Pghb3CqVJnFE44p2phGi47z7pjK4Lc=" alt="" width="50px">Cake Bakery</a>
+          
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span><img src="https://media.istockphoto.com/id/1187830875/photo/confectioner-decorating-chocolate-cake-close-up.jpg?s=612x612&w=0&k=20&c=sAUop7R4pohc-Pghb3CqVJnFE44p2phGi47z7pjK4Lc=" alt="" width="30px"></span>
+            </button>
+          
+           
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                     Category
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Birthday Cake</a>
+                        <a href="#" class="dropdown-item">Chocolate Cake</a>
+                        <a href="#" class="dropdown-item">Party Cake</a>
+                        <a href="#" class="dropdown-item">Slice Cake</a>
+                        <a href="#" class="dropdown-item">Cup Cake</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Galary</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="icons">
+                <img src="https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?cs=srgb&dl=pexels-brent-keane-1702373.jpg&fm=jpg" alt="" width="20px">
+                <img src="https://www.cakehut.in/image/cache/catalog/2021%20cake%20photos/Double%20Chocolatee-600x600w.jpg.webp" alt="" width="20px">
+                <img src="https://st4.depositphotos.com/10614052/25239/i/600/depositphotos_252391082-stock-photo-sweet-chocolate-cake-on-wooden.jpg" alt="" width="24px">
+            </div>
+          </nav>
+        
+        <div class="home">
+            <div class="content" data-aos="zoom-out-right">
+                <h3>Delicious
+                    <br>Cakes Bakery
+                </h3>
+                <h2>Category <span class="changecontent"></span></h2>
+                <p>wanted to taste good then
+                    <br>get delicious cakes from our cakes bakery
+                </p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+            <div class="img"  data-aos="zoom-out-left">
+                <img src="" alt="notfound">
+            </div>
+        </div>
+       
+      <div class="container" id="box"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="row">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://birthdaycake24.com/uploads/worigin/2022/06/25/sweet-chocolate-birthday-wishes-cake_a78a1.jpg" alt="notfound">
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://www.fnp.com/images/pr/l/v20221205202803/chocolate-rose-designer-cake-half-kg_1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://www.labonelfinebaking.shop/wp-content/uploads/2021/02/CLASSIC-CHOCOLATE-CAKE.jpg" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+     
+        <div class="banner"    data-aos="fade-up"
+        data-aos-duration="1500">
+            <div class="content">
+                <h3>Delicious Cake</h3>
+                <h2>UPTO 50% OFF</h2>
+                <p>with great discount and tasty cakes in ur bag</p>
+                <div id="btnorder"><button>Order Now</button></div>
+            </div>
+            
+        </div>
+     
+      <section id="product-cards"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1>CAKES</h1>
+            <div class="row" style="margin-top:50px;">
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="" alt="notfound" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="https://www.onlinedelivery.in/images/detailed/34/We_are_like_snowflakes,_all_different_in_our_own_beautiful_way..png" alt="">
+                    <div class="card-body">
+                        <h3>Cream Cake</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star "></i>
+                          <i class="bx bxs-star "></i>
+                        </div>
+                        <p>the best creamy cake you will find here .</p>
+                        <h6>1500/- <span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="https://bestrecipesuk.com/wp-content/uploads/2020/01/Chocolate-Cake-800x840.jpg?crop=1" alt="">
+                    <div class="card-body">
+                        <h3>Choco Cake</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star "></i>
+                          <i class="bx bxs-star "></i>
+                        </div>
+                        <p>who wont love choco and here you will like the best chocolate cake.</p>
+                        <h6>1200/- <span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="https://www.pamelasproducts.com/cdn/shop/articles/20211108190954-chocolate-cake-slice.jpg?v=1636398779" alt="">
+                    <div class="card-body">
+                        <h3>Slice Cake</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star "></i>
+                        </div>
+                        <p>cant eat more cake then get this slice cake.</p>
+                        <h6>250/-<span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="https://www.recipetineats.com/wp-content/uploads/2019/12/Christmas-Cake-decorated-with-fondant-marzipan-and-cherries-SQ.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Fruit Cake</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                        </div>
+                        <p>the healthy so u can eat healthy add it to ur plate now.</p>
+                        <h6>1600/-<span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+            </div>
+
+
+
+
+
+
+            <div class="row" style="margin-top:50px;"    data-aos="fade-up"
+            data-aos-duration="1500">
+                <div class="col-md-3 py-3 py-md-0">
+                 <div class="card">
+                     <div class="overlay">
+                         <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                     </div>
+                     <img src="https://media.bakingo.com/sq-round-rosey-brown-chocolate-cake-cake2570choc-A_1.jpg" alt="">
+                     <div class="card-body">
+                         <h3>Brown Cake</h3>
+                         <div class="star">
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star "></i>
+                           <i class="bx bxs-star "></i>
+                         </div>
+                         <p>bored of colours the get this simple brown cake.</p>
+                         <h6>400/- <span><button>Add Cart</button></span></h6>
+                     </div>
+                 </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                 <div class="card">
+                     <div class="overlay">
+                         <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                     </div>
+                     <img src="https://ribbonsandballoons.com/assets1/uploads/Strawberry-Pastry_834483.jpg" alt="notfound">
+                     <div class="card-body">
+                         <h3>pastries</h3>
+                         <div class="star">
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star "></i>
+                           <i class="bx bxs-star "></i>
+                         </div>
+                         <p>AWW pastries..such a juicy sweety cake along with icecream .</p>
+                         <h6>700/- <span><button>Add Cart</button></span></h6>
+                     </div>
+                 </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                 <div class="card">
+                     <div class="overlay">
+                         <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                     </div>
+                     <img src="https://bromabakery.com/wp-content/uploads/2020/07/black-forest-cake-6.jpg" alt="notfound">
+                     <div class="card-body">
+                         <h3>darkforest</h3>
+                         <div class="star">
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star "></i>
+                         </div>
+                         <p>how many cakes you try and bored of you wont get bored of this .</p>
+                         <h6>1500/- <span><button>Add Cart</button></span></h6>
+                     </div>
+                 </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                 <div class="card">
+                     <div class="overlay">
+                         <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                     </div>
+                     <img src="https://5.imimg.com/data5/HU/ZI/GS/SELLER-40438996/rv06-jpg-500x500.jpg" alt="">
+                     <div class="card-body">
+                         <h3>redwelwet Cake</h3>
+                         <div class="star">
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                         </div>
+                         <p>see that red stuff and soft as welwet fabric.</p>
+                         <h6>1200/- <span><button>Add Cart</button></span></h6>
+                     </div>
+                 </div>
+                </div>
+             </div>
+        </div>
+      </section>
+
+
+      <section id="product-cards"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1>BIRTHDAY CAKE</h1>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                             <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="https://m.media-amazon.com/images/I/61cCdBCux3L._AC_UF1000,1000_QL80_.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Birthday cake for girls</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p>get your baby girl this cake and she will be obsessed of this.</p>
+                            <h6>2000/-<span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                             <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="https://www.yummycake.co.in/wp-content/uploads/2022/12/First-Birthday-Cake-for-Boy.jpeg" alt="">
+                        <div class="card-body">
+                            <h3>birthday cake for boys</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p>get different designed cake boys as they wont like pink one so.</p>
+                            <h6>2500/- <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                             <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="https://www.cakedayphotoframes.com/public/storage/posts/1579068627-semple.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Birthday cake for wedding</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p>make your wedding little bit sweeter along with your sweeter moments.</p>
+                            <h6>3000/- <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                             <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="https://sugarspunrun.com/wp-content/uploads/2023/04/Birthday-Cupcakes-1-of-1-2.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Cup cake cake </h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p>instead of having normal cake have this cake you ll like it.</p>
+                            <h6>600/- <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      
+      <section id="gallary"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1>OUR GALLARY</h1>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Donuts</h3>
+                        </div>
+                        <img src="https://www.tfcakes.in/images/products/221231_021351_643_268.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Ice Cream</h3>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wedding_cake_with_pillar_supports%2C_2009.jpg/250px-Wedding_cake_with_pillar_supports%2C_2009.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Cup Cake</h3>
+                        </div>
+                        <img src="https://cdn.shopify.com/s/files/1/0255/1378/7480/products/2_TIER4.jpg?v=1680008784" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" style="margin-top: 30px;"    data-aos="fade-up"
+            data-aos-duration="1500">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Delicious Cake</h3>
+                        </div>
+                        <img src="https://thefirstyearblog.com/wp-content/uploads/2015/11/chocolate-chocolate-cake-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Chocolate Cake</h3>
+                        </div>
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2021/03/Unicorn-cake-32e0971.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Slice Cake</h3>
+                        </div>
+                        <img src="https://stordfkenticomedia.blob.core.windows.net/df-us/rms/media/recipemediafiles/recipes/retail/x17/rainbow-cake760x580.jpg?ext=.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    
+
+
+
+    
+      <div class="container" id="about"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1>ABOUT US</h1>
+        <div class="row">
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2013/05/easy-lemon-layer-cake-hero-e54adca.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 py-3 py-md-0">
+                    <p>Cake is a flour confection made from flour, sugar, and other ingredients and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate and which share features with desserts such as pastries, meringues, custards, and pies.
+
+                        The most common ingredients include flour, sugar, eggs, fat (such as butter, oil, or margarine), a liquid, and a leavening agent, such as baking soda or baking powder. Common additional ingredients include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts, or dessert sauces (like custard, jelly, cooked fruit, whipped cream, or syrups),[1] iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.
+                        
+                        Cake is often served as a celebratory dish on ceremonial occasions, such as weddings, anniversaries, and birthdays. There are countless cake recipes; some are bread-like, some are rich and elaborate, and many are centuries old. Cake making is no longer a complicated procedure.</p>                
+
+                <div id="bt"><button>Read More...</button></div>
+            </div>
+        </div>
+      </div>
+      
+      <div class="container" id="contact"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1>CONTACT US</h1>
+        <div class="row">
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder="A.Divya">
+                </div>
+            </div>
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="eml" placeholder="Divya67@gmail.com">
+                </div>
+            </div>
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="phn" placeholder="9030421909">
+                </div>
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="5" id="comment" placeholder="type your order here to place here"></textarea>
+        </div>
+        <div id="messagebtn"><button>PLACE ORDER</button></div>
+      </div>
+      
+      <footer id="footer"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1 class="text-center">Cake Bakery</h1>
+        <p class="text-center">get best cakes from us .</p>
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong>Cake Bakery</strong> .All Rights Reserved
+        </div>
+       
+      </footer>
+      
+
+      <a href="#" class="arrow"><i><img src="./image/up-arrow.png" alt="" width="50px"></i></a>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
